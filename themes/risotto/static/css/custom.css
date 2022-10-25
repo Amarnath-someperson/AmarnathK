@@ -1,0 +1,301 @@
+/* Override this file to customise the theme's CSS for your site */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+/* Page Body Settings */
+:root {
+  --font-monospace: "Ubuntu Mono", monospace;
+}
+
+/* Nav settings */
+
+.nav-main-item a {
+  color: lightgreen;
+  font-size: large;
+}
+
+/*utils*/
+
+.sticky {
+  position: sticky;
+  top: 20px;
+}
+/*misc*/
+
+body a {
+  text-decoration: none;
+}
+
+.page__body {
+  position: relative;
+  min-height: 70vh;
+}
+
+.front__align {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: max-content;
+}
+img[alt="A picture of me"] {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media (min-width: 45rem) {
+  .page__body {
+    font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 2px;
+    margin: 0px 0px 0px 20px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 45rem) {
+  .page__body {
+    font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 2px;
+    margin: 0px 10px 0px 10px;
+    text-align: justify;
+    font-size: smaller;
+  }
+}
+
+/* h properties */
+
+@media (max-width: 45rem) {
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    content: "";
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 45rem) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-monospace);
+}
+
+.page__body h1 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 2.25rem;
+  color: var(--bright-cyan);
+}
+
+.page__body h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: var(--cyan);
+}
+
+.page__body h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 1.75rem;
+  color: var(--bright-cyan);
+}
+
+.page__body h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: var(--cyan);
+}
+
+.page__body h5 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  color: var(--bright-cyan);
+}
+
+.page__body h6 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+  color: var(--cyan);
+}
+
+.pages {
+  margin: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-width: 1rem;
+  border-radius: 10px;
+  opacity: 1;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, coral 50%, lightgreen 50%);
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s;
+  transition: background-position 1s;
+}
+
+@media (max-width: 45rem) {
+  .pages {
+    margin: 10px;
+  }
+}
+
+.pages:hover {
+  background-position: 200% 0;
+}
+
+.pages {
+  position: relative;
+}
+
+.div-span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* stackoverflow */
+}
+
+.pages .post-name {
+  font-family: "Quicksand", sans-serif;
+  font-size: medium;
+  line-height: 1.3rem;
+  color: black;
+}
+
+.pages .post-name a {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  color: black;
+}
+
+/* colors */
+/* https://www.sliderrevolution.com/coding/css-background-patterns/ */
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.page__body {
+  box-shadow: 0 0 0 1rem black;
+  background-color: black;
+  opacity: 0.8;
+  font-family: "Quicksand", sans-serif;
+  font-size: medium;
+}
+
+.page__logo-inner {
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  background-color: coral;
+}
+
+.page__header {
+  box-shadow: 0 0 0 1rem black;
+  background-color: black;
+  border-radius: 2px;
+  margin: 20px;
+  opacity: 0.8;
+}
+
+.page__aside {
+  color: var(--fg);
+  box-shadow: 0 0 0 1rem black;
+  background-color: black;
+  border-radius: 2px;
+  margin: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  opacity: 0.8;
+}
+
+.page__footer {
+  color: var(--fg);
+  box-shadow: 0 0 0 1rem black;
+  background-color: black;
+  border-radius: 2px;
+  margin: 20px;
+  opacity: 0.8;
+}
+
+@media (max-width: 45rem) {
+  .page__header {
+    margin: 20px 10px 20px 10px;
+  }
+  .page__aside {
+    margin: 20px 10px 20px 10px;
+  }
+  .page__footer {
+    margin: 0px 10px 20px 10px;
+  }
+}
+svg[data-prefix="fas"] > path {
+  color: lightgreen;
+}
+
+/* hover */
+
+a:link {
+  color: lightgreen;
+}
+a:visited {
+  color: rgb(167, 211, 255);
+}
+a:hover {
+  transition: all 0.5s ease-in-out;
+  color: rgb(231, 164, 231);
+}
+
+blockquote {
+  text-align: center;
+  font-style: italic;
+}

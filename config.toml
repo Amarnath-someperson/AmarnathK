@@ -1,0 +1,34 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-gb'
+title = 'Amarnath K'
+author = 'Amarnath K'
+copyright = 'Content © 2022 Amarnath K, GNU GPL v3 or above.'
+theme = "risotto"
+enableInLineShortCodes = true
+
+[params.theme]
+palette = 'gruvbox-dark'
+mode = 'dark-mode'
+
+[params.about]
+title = 'Amarnath K'
+description = 'I like to code, but also get depressed doing it.'
+logo = 'logo'
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+    
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/post/"
+    weight=11
+
+  [[menu.main]]
+    identifier="community"
+    name="community"
+    url="/comty/"
